@@ -4,25 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rafa Irhamniyansyah — Portfolio</title>
-
-  <!-- Google Fonts:
-       Syne        = display heading, geometric & modern
-       DM Sans     = body teks, bersih dan readable
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ══════════════════════════════════
-       NAV — sticky di atas
-  ══════════════════════════════════ -->
   <nav class="nav" aria-label="Navigasi utama">
     <div class="nav__inner">
       <a href="#hero" class="nav__logo" aria-label="Kembali ke atas">RI.</a>
@@ -38,39 +27,24 @@
 
   <main>
 
-    <!-- ══════════════════════════════════
-         SECTION 1 · HERO
-    ══════════════════════════════════ -->
     <section class="hero" id="hero">
-
-      <!-- Grid background dekoratif -->
       <div class="hero__grid" aria-hidden="true"></div>
-
-      <!-- Accent glow blob -->
       <div class="hero__blob" aria-hidden="true"></div>
-
       <div class="hero__inner">
         <div class="hero__text">
-
           <p class="hero__eyebrow">
             <span class="eyebrow__dot"></span>
             Available for projects
           </p>
-
           <h1 class="hero__name">
             Rafa<br />
             <span class="hero__name-accent">Irhamni<wbr />yansyah</span>
           </h1>
-
-          <p class="hero__role">
-            Mahasiswa TRPL &mdash; SV UGM
-          </p>
-
+          <p class="hero__role">Mahasiswa TRPL &mdash; SV UGM</p>
           <p class="hero__bio">
             Membangun antarmuka yang bersih, fungsional, dan bermakna.
             Tertarik pada persilangan antara desain dan rekayasa perangkat lunak.
           </p>
-
           <div class="hero__actions">
             <a href="#projects" class="btn btn--primary">
               View Projects
@@ -78,7 +52,6 @@
             </a>
             <a href="#contact" class="btn btn--ghost">Get in Touch</a>
           </div>
-
           <div class="hero__stats">
             <div class="stat">
               <span class="stat__num">6+</span>
@@ -96,46 +69,30 @@
             </div>
           </div>
         </div>
-
-        <!-- Foto / avatar placeholder -->
         <figure class="hero__avatar-wrap">
           <div class="hero__avatar" aria-label="Foto profil Rafa">
             <div class="avatar__placeholder">
               <span class="avatar__initials">RI</span>
             </div>
-            <!-- Ring dekoratif berputar -->
             <div class="avatar__ring avatar__ring--outer" aria-hidden="true"></div>
             <div class="avatar__ring avatar__ring--inner" aria-hidden="true"></div>
           </div>
-          <figcaption class="hero__avatar-caption">
-            Rafa Irhamniyansyah Achmad
-          </figcaption>
+          <figcaption class="hero__avatar-caption">Rafa Irhamniyansyah Achmad</figcaption>
         </figure>
       </div>
-
-      <!-- Scroll indicator -->
       <div class="hero__scroll" aria-hidden="true">
         <div class="scroll-line"></div>
         <span class="scroll-label">Scroll</span>
       </div>
     </section>
 
-
-    <!-- ══════════════════════════════════
-         SECTION 2 · ABOUT
-    ══════════════════════════════════ -->
     <section class="about" id="about">
       <div class="section-container">
-
         <div class="about__layout">
-
           <div class="about__left">
             <p class="section-label">01 — About</p>
-            <h2 class="section-title">
-              Sedikit tentang<br /><em>diri saya.</em>
-            </h2>
+            <h2 class="section-title">Sedikit tentang<br /><em>diri saya.</em></h2>
           </div>
-
           <div class="about__right">
             <p class="about__text">
               Halo! Saya <strong>Rafa Irhamniyansyah Achmad</strong>, mahasiswa
@@ -149,7 +106,6 @@
               Di sisi software, saya senang merancang solusi yang bersih, efisien,
               dan berdampak nyata bagi pengguna.
             </p>
-
             <div class="about__interest">
               <p class="about__interest-label">
                 <i class="fa-solid fa-microchip" aria-hidden="true"></i>
@@ -157,7 +113,6 @@
               </p>
               <p class="about__interest-value">IoT Development · Software Development · UI Design</p>
             </div>
-
             <div class="about__tags">
               <span class="tag">IoT Dev</span>
               <span class="tag">Software Dev</span>
@@ -165,35 +120,23 @@
               <span class="tag">Fast Learner</span>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-
-    <!-- ══════════════════════════════════
-         SECTION 3 · SKILLS
-    ══════════════════════════════════ -->
     <section class="skills" id="skills">
       <div class="section-container">
-
         <div class="skills__header">
           <p class="section-label">02 — Skills</p>
           <h2 class="section-title">Tech yang saya<br /><em>kuasai.</em></h2>
         </div>
-
         <div class="skills__grid skills__grid--four">
-
           <article class="skill-card skill-card--large">
             <div class="skill-card__icon skill-card__icon--figma">
               <i class="fa-brands fa-figma" aria-hidden="true"></i>
             </div>
             <h3 class="skill-card__name">Figma / UI Design</h3>
-            <p class="skill-card__desc">
-              Merancang antarmuka dari wireframe hingga prototype interaktif.
-              Membuat komponen design system, user flow, dan slicing desain
-              ke HTML + CSS dengan akurat.
-            </p>
+            <p class="skill-card__desc">Merancang antarmuka dari wireframe hingga prototype interaktif. Membuat komponen design system, user flow, dan slicing desain ke HTML + CSS dengan akurat.</p>
             <div class="skill-card__bar" aria-label="Level Figma: 75%">
               <div class="skill-card__fill" style="--fill: 75%"></div>
             </div>
@@ -204,17 +147,12 @@
               <span class="skill-tag">UI Slicing</span>
             </div>
           </article>
-
           <article class="skill-card skill-card--large">
             <div class="skill-card__icon skill-card__icon--python">
               <i class="fa-brands fa-python" aria-hidden="true"></i>
             </div>
             <h3 class="skill-card__name">Python</h3>
-            <p class="skill-card__desc">
-              Menulis script untuk automasi, pengolahan data, dan logika
-              pemrograman. Familiar dengan struktur data, fungsi, dan
-              dasar-dasar pemrograman berbasis Python.
-            </p>
+            <p class="skill-card__desc">Menulis script untuk automasi, pengolahan data, dan logika pemrograman. Familiar dengan struktur data, fungsi, dan dasar-dasar pemrograman berbasis Python.</p>
             <div class="skill-card__bar" aria-label="Level Python: 72%">
               <div class="skill-card__fill" style="--fill: 72%"></div>
             </div>
@@ -225,17 +163,12 @@
               <span class="skill-tag">OOP</span>
             </div>
           </article>
-
           <article class="skill-card skill-card--large">
             <div class="skill-card__icon skill-card__icon--arduino">
               <i class="fa-solid fa-microchip" aria-hidden="true"></i>
             </div>
             <h3 class="skill-card__name">Arduino</h3>
-            <p class="skill-card__desc">
-              Pemrograman mikrokontroler Arduino untuk membaca data sensor,
-              mengontrol aktuator, dan membangun prototipe sistem embedded
-              berbasis IoT.
-            </p>
+            <p class="skill-card__desc">Pemrograman mikrokontroler Arduino untuk membaca data sensor, mengontrol aktuator, dan membangun prototipe sistem embedded berbasis IoT.</p>
             <div class="skill-card__bar" aria-label="Level Arduino: 70%">
               <div class="skill-card__fill" style="--fill: 70%"></div>
             </div>
@@ -246,17 +179,12 @@
               <span class="skill-tag">Embedded</span>
             </div>
           </article>
-
           <article class="skill-card skill-card--large">
             <div class="skill-card__icon skill-card__icon--esp32">
               <i class="fa-solid fa-wifi" aria-hidden="true"></i>
             </div>
             <h3 class="skill-card__name">ESP32</h3>
-            <p class="skill-card__desc">
-              Menggunakan ESP32 sebagai otak sistem IoT — menghubungkan
-              perangkat ke jaringan WiFi, mengirim data sensor secara
-              real-time ke server atau dashboard monitoring.
-            </p>
+            <p class="skill-card__desc">Menggunakan ESP32 sebagai otak sistem IoT — menghubungkan perangkat ke jaringan WiFi, mengirim data sensor secara real-time ke server atau dashboard monitoring.</p>
             <div class="skill-card__bar" aria-label="Level ESP32: 68%">
               <div class="skill-card__fill" style="--fill: 68%"></div>
             </div>
@@ -267,34 +195,25 @@
               <span class="skill-tag">Networking</span>
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
-
-    <!-- ══════════════════════════════════
-         SECTION 4 · PROJECTS
-    ══════════════════════════════════ -->
     <section class="projects" id="projects">
       <div class="section-container">
-
         <div class="projects__header">
           <p class="section-label">03 — Projects</p>
           <h2 class="section-title">Beberapa project<br /><em>yang pernah dibuat.</em></h2>
         </div>
-
         <div class="projects__grid">
-
-          <!-- Project IoT — featured karena ini project nyata terbaik -->
           <article class="project-card project-card--featured project-card--iot">
             <div class="project-card__top">
               <div class="project-card__num" aria-hidden="true">01</div>
               <div class="project-card__links">
-                <a href="#" class="project-card__link" aria-label="Source code project IoT">
+                <a href="#" class="project-card__link" aria-label="Source code project IoT" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-github" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="project-card__link" aria-label="Live demo project IoT">
+                <a href="#" class="project-card__link" aria-label="Live demo project IoT" target="_blank" rel="noopener noreferrer">
                   <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                 </a>
               </div>
@@ -304,11 +223,7 @@
               IoT Project
             </div>
             <h3 class="project-card__title">Sistem Monitoring Kondisi Lingkungan Ruang Ibadah Berbasis IoT</h3>
-            <p class="project-card__desc">
-              Sistem pemantauan kondisi lingkungan secara real-time pada ruang ibadah
-              menggunakan sensor suhu, kelembaban, dan kualitas udara. Data dari sensor
-              dikirim via mikrokontroler dan ditampilkan pada dashboard monitoring.
-            </p>
+            <p class="project-card__desc">Sistem pemantauan kondisi lingkungan secara real-time pada ruang ibadah menggunakan sensor suhu, kelembaban, dan kualitas udara. Data dari sensor dikirim via mikrokontroler dan ditampilkan pada dashboard monitoring.</p>
             <div class="project-card__stack">
               <span class="stack-tag">IoT</span>
               <span class="stack-tag">Sensor</span>
@@ -316,124 +231,89 @@
               <span class="stack-tag">Dashboard</span>
             </div>
           </article>
-
           <article class="project-card">
             <div class="project-card__top">
               <div class="project-card__num" aria-hidden="true">02</div>
               <div class="project-card__links">
-                <a href="#" class="project-card__link" aria-label="Source code project 2">
+                <a href="#" class="project-card__link" aria-label="Source code project 2" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-github" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="project-card__link" aria-label="Live demo project 2">
+                <a href="#" class="project-card__link" aria-label="Live demo project 2" target="_blank" rel="noopener noreferrer">
                   <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
             <h3 class="project-card__title">Portfolio Website</h3>
-            <p class="project-card__desc">
-              Website portfolio pribadi yang dibangun dengan HTML dan CSS murni.
-              Menerapkan semantic HTML, BEM methodology, dan desain responsif.
-            </p>
+            <p class="project-card__desc">Website portfolio pribadi yang dibangun dengan HTML dan CSS murni. Menerapkan semantic HTML, BEM methodology, dan desain responsif.</p>
             <div class="project-card__stack">
               <span class="stack-tag">HTML</span>
               <span class="stack-tag">CSS</span>
             </div>
           </article>
-
           <article class="project-card">
             <div class="project-card__top">
               <div class="project-card__num" aria-hidden="true">03</div>
               <div class="project-card__links">
-                <a href="#" class="project-card__link" aria-label="Source code project 3">
+                <a href="#" class="project-card__link" aria-label="Source code project 3" target="_blank" rel="noopener noreferrer">
                   <i class="fa-brands fa-github" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="project-card__link" aria-label="Live demo project 3">
+                <a href="#" class="project-card__link" aria-label="Live demo project 3" target="_blank" rel="noopener noreferrer">
                   <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
             <h3 class="project-card__title">UI Design — Figma</h3>
-            <p class="project-card__desc">
-              Desain antarmuka aplikasi mobile menggunakan Figma. Mencakup
-              wireframe, prototype interaktif, dan komponen design system.
-            </p>
+            <p class="project-card__desc">Desain antarmuka aplikasi mobile menggunakan Figma. Mencakup wireframe, prototype interaktif, dan komponen design system.</p>
             <div class="project-card__stack">
               <span class="stack-tag">Figma</span>
               <span class="stack-tag">UI Design</span>
               <span class="stack-tag">Prototype</span>
             </div>
           </article>
-
         </div>
-
         <p class="projects__note">
           <i class="fa-brands fa-github" aria-hidden="true"></i>
           Update link project setelah upload ke GitHub ya!
         </p>
-
       </div>
     </section>
 
-
-    <!-- ══════════════════════════════════
-         SECTION 5 · CONTACT
-    ══════════════════════════════════ -->
     <section class="contact" id="contact">
       <div class="section-container">
-
         <div class="contact__inner">
           <p class="section-label">04 — Contact</p>
-          <h2 class="contact__title">
-            Mari berkolaborasi<br /><em>bersama.</em>
-          </h2>
-          <p class="contact__sub">
-            Punya project yang menarik? Atau sekadar ingin ngobrol soal tech?
-            Jangan ragu untuk menghubungi saya.
-          </p>
-
-          <a href="mailto:rafa@email.com" class="contact__email">
+          <h2 class="contact__title">Mari berkolaborasi<br /><em>bersama.</em></h2>
+          <p class="contact__sub">Punya project yang menarik? Atau sekadar ingin ngobrol soal tech? Jangan ragu untuk menghubungi saya.</p>
+          <a href="mailto:rafairham80@email.com" class="contact__email">
             rafairham80@email.com
             <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
           </a>
-
           <div class="contact__socials">
             <a href="https://github.com/rafa1606" class="social-link" aria-label="GitHub Rafa" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-github" aria-hidden="true"></i>
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/rafa-irhamniyansyah-achmad-810a76381?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="social-link" aria-label="LinkedIn Rafa" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/rafa-irhamniyansyah-achmad-810a76381" class="social-link" aria-label="LinkedIn Rafa" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
               LinkedIn
             </a>
-            <a href="https://www.instagram.com/rafansyahhh._?igsh=MXZpanQ2dzBmZmdpbA%3D%3D&utm_source=q" class="social-link" aria-label="Instagram Rafa" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/rafansyahhh._" class="social-link" aria-label="Instagram Rafa" target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-instagram" aria-hidden="true"></i>
               Instagram
             </a>
           </div>
         </div>
-
       </div>
     </section>
 
   </main>
 
-
-  <!-- ══════════════════════════════════
-       FOOTER
-  ══════════════════════════════════ -->
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__copy">
-        &copy; 2025 Rafa Irhamniyansyah Achmad
-      </p>
-      <p class="footer__made">
-        Built with <i class="fa-solid fa-heart" aria-hidden="true"></i> HTML &amp; CSS Vanilla
-      </p>
+      <p class="footer__copy">&copy; 2025 Rafa Irhamniyansyah Achmad</p>
+      <p class="footer__made">Built with <i class="fa-solid fa-heart" aria-hidden="true"></i> HTML &amp; CSS Vanilla</p>
     </div>
   </footer>
-
-
-
 
 </body>
 </html>
