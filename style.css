@@ -1063,3 +1063,150 @@ em { font-style: italic; }
   color: #e74c3c;
   font-size: 11px;
 }
+
+
+/* ============================================================
+   RESPONSIVE — Media Queries
+   Modul 6: Responsive Web Design
+   ============================================================ */
+
+/* ── LAPTOP / TABLET LARGE (≤ 1024px) ── */
+@media (max-width: 1024px) {
+
+  :root { --container: 900px; }
+
+  .hero__name { font-size: clamp(2.8rem, 6vw, 5rem); }
+
+  .skills__grid--four {
+    grid-template-columns: repeat(2, 1fr); /* 4 kolom → 2 kolom */
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr 1fr; /* 3 kolom → 2 kolom */
+  }
+
+  .project-card--featured {
+    grid-column: 1 / -1; /* featured card full width */
+  }
+}
+
+/* ── TABLET (≤ 768px) ── */
+@media (max-width: 768px) {
+
+  :root { --container: 100%; }
+
+  /* Nav — hamburger style vertikal */
+  .nav__inner {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0 20px;
+  }
+
+  .nav__list {
+    order: 3;
+    width: 100%;
+    flex-direction: column; /* horizontal → vertikal */
+    gap: 4px;
+    padding: 8px 0 12px;
+    border-top: 1px solid var(--c-border);
+  }
+
+  .nav__link {
+    display: block;
+    padding: 6px 0;
+  }
+
+  .nav__cta { order: 2; }
+
+  /* Hero — satu kolom */
+  .hero__inner {
+    flex-direction: column-reverse; /* avatar di atas, teks di bawah */
+    gap: 32px;
+    padding: 60px 20px 40px;
+    text-align: center;
+  }
+
+  .hero__name { font-size: clamp(2.2rem, 8vw, 3.5rem); }
+
+  .hero__actions { justify-content: center; }
+
+  .hero__stats { justify-content: center; }
+
+  .hero__avatar { width: 160px; height: 160px; }
+
+  /* About — satu kolom */
+  .about__layout {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .about__left { width: 100%; }
+
+  /* Skills — 2 kolom tetap */
+  .skills__grid--four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Projects — 1 kolom */
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Section padding */
+  .section-container { padding: 0 20px; }
+
+  .about, .skills, .projects, .contact {
+    padding: 60px 0;
+  }
+}
+
+/* ── MOBILE (≤ 480px) ── */
+@media (max-width: 480px) {
+
+  /* Nav simpel */
+  .nav__list { gap: 2px; }
+
+  /* Hero */
+  .hero__inner { padding: 50px 16px 32px; }
+
+  .hero__name { font-size: clamp(1.8rem, 9vw, 2.8rem); }
+
+  .hero__bio { font-size: 14px; }
+
+  .hero__stats {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .stat__divider { display: none; }
+
+  .hero__avatar { width: 130px; height: 130px; }
+
+  /* Skills — 1 kolom di mobile */
+  .skills__grid--four {
+    grid-template-columns: 1fr;
+  }
+
+  /* About tags wrap */
+  .about__tags { gap: 6px; }
+
+  /* Contact */
+  .contact__email { font-size: clamp(1rem, 5vw, 1.4rem); }
+
+  .contact__socials { gap: 12px; flex-wrap: wrap; }
+
+  /* Footer */
+  .footer__inner {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  /* Section padding */
+  .about, .skills, .projects, .contact {
+    padding: 48px 0;
+  }
+
+  .section-container { padding: 0 16px; }
+}
